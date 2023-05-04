@@ -1,0 +1,16 @@
+train:
+    python train.py config/config.py [--iter x (which epoch to start with)]
+    * can change parameters at config/config.py such as epochs,batchsize,iter_per_epoch(imgs_per_epoch)
+    * having trained with configs provided in the code ,training results are stored at output/ckpt 
+
+test:
+    * before test should create a .txt including the names of images wanting to test
+    * wtxt.py can help create test.txt that includes all test images' names
+    python test.py --testiter x  (choose epoch weights to test-->from epoch x to epoch ? defined in test.py)
+    * having tested with epoch 25 to 108, best result 5.59%MR at epoch 83
+
+debug:
+    * can show results in images,should first write images'names to test.txt 
+    python test.py --testiter x --debug  (choose epoch weights to debug-->from epoch x to epoch ? defined in test.py, 
+                                          weights should be stored in output/ckpt)
+
