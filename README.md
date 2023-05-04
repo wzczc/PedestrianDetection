@@ -20,3 +20,24 @@ The structure of CSP:
 ## My results
 * training and testing different methods using different loss weights
 * best result is **5.42%MR^-2** with **CSP_HeadCenter_3×3** and the loss weight of head center is **0.005**.  (**a 0.17% improvement compared with the CSP code!**)
+## CSP-Gui
+* need PyQt 5.15.9
+* MainWindow  
+![image](https://user-images.githubusercontent.com/94534877/236140549-b4270e11-abb3-4d68-9583-0d52fcff1c79.png)
+* Training: can **change configs** and print trainging logs  
+
+
+https://user-images.githubusercontent.com/94534877/236141117-ad785697-99fa-4460-95cd-09a27ccd2ce1.mp4
+
+* Test: can **choose images and modes** to test,**score and nms threshold can be changed**,test results will be shown and printed  
+
+
+https://user-images.githubusercontent.com/94534877/236141182-5bfa060c-6da8-4145-a827-7285e87a41aa.mp4
+
+* Track: can **choose videos** or **open camera** to track,should firstly detect a frame and then **choose one tracking method**(tradition methods) to track  
+
+
+https://user-images.githubusercontent.com/94534877/236142147-3d153968-8298-437c-8f96-2026ead1d9e4.mp4
+
+
+
